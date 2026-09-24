@@ -1,8 +1,7 @@
-import '@testing-library/jest-dom'
+import '@testing-library/jest-dom/vitest'
 
 // ---- Canvas mock para jsdom ----
-if (!HTMLCanvasElement.prototype.getContext) {
-  HTMLCanvasElement.prototype.getContext = () => {
+HTMLCanvasElement.prototype.getContext = () => {
     const noop = () => {}
     return {
       canvas: {},
@@ -35,4 +34,3 @@ if (!HTMLCanvasElement.prototype.getContext) {
       setLineDash: noop,
     }
   }
-}

@@ -45,6 +45,8 @@ export default function BlueprintCanvas({ points = [], width = 520, height = 360
 
   return (
     <canvas
+      id="blueprint-canvas"
+      data-testid="blueprint-canvas"
       ref={ref}
       width={width}
       height={height}
