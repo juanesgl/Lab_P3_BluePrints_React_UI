@@ -1,10 +1,15 @@
-import { configureStore } from '@reduxjs/toolkit'
+import { combineReducers, configureStore } from '@reduxjs/toolkit'
 import blueprintsReducer from '../features/blueprints/blueprintsSlice.js'
+import authReducer from '../features/auth/authSlice.js'
 
-const store = configureStore({
-  reducer: {
-    blueprints: blueprintsReducer,
-  },
+const rootReducer = combineReducers({
+  blueprints: blueprintsReducer,
+  auth: authReducer,
 })
+
+export const makeStore = (preloadedState) =>
+  configureStore({ reducer: rootReducer, preloadedState })
+
+const store = makeStore()
 
 export default store

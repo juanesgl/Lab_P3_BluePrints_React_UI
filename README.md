@@ -1,4 +1,37 @@
-# Lab – React Client for Blueprints (Redux + Axios + JWT)
+# Escuela Colombiana de Ingeniería Julio Garavito
+## Arquitectura de Software – ARSW
+### Laboratorio – Parte 3: Cliente React para BluePrints (Redux + Axios + JWT)
+
+---
+
+## Integrantes del equipo
+
+| Nombre                                                     | Rol        |
+|------------------------------------------------------------|------------|
+| [Juan David Valero Abril](https://github.com/Valero25)     | Estudiante |
+| [Juan Esteban Sanchez Garcia](https://github.com/juanesgl) | Estudiante |
+
+---
+
+## Documentación del laboratorio
+
+| Documento | Contenido |
+|-----------|-----------|
+| 📄 **[SOLUCION_LABORATORIO.md](./SOLUCION_LABORATORIO.md)** | Desarrollo completo: cómo ejecutarlo, qué se implementó en cada punto con su código, integración con el backend, errores corregidos, pruebas y evidencias. |
+| 📖 [DEFINICIONES.md](./DEFINICIONES.md) | Glosario de los conceptos clave del laboratorio. |
+
+## Repositorios
+
+El laboratorio se divide en dos repositorios independientes que se comunican por HTTP:
+
+| Repositorio | Contenido |
+|-------------|-----------|
+| **Lab_P3_BluePrints_React_UI** (este) | Frontend: SPA en React + Vite |
+| [Lab_P2_BluePrints_Java21_API_Security_JWT](https://github.com/juanesgl/Lab_P2_BluePrints_Java21_API_Security_JWT) | Backend: API REST Spring Boot + JWT + PostgreSQL |
+
+---
+
+# Enunciado del laboratorio
 
 > Basado en el cliente HTML/JS del repo de referencia, este laboratorio moderniza el _frontend_ con **React + Vite**, **Redux Toolkit**, **Axios** (con interceptores y JWT), **React Router** y pruebas con **Vitest + Testing Library**.
 
